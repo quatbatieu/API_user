@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.about {
+  position: relative;
+  padding-top: 200px;
+  z-index: 1;
+}
+.about .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+.about .container .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.about .container .row .col-3 {
+  width: 21%;
+  padding: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+.about .container .row .col-3 .styleImg {
+  overflow: hidden;
+}
+.about .container .row .col-3 .styleImg img {
+  width: 100%;
+}
+.about .container .row .col-3 .styleImg img:hover {
+  transform: scale(1.1);
+  transition: 1s all ease-in-out;
+}
+.about .container .row .col-3 .text {
+  background-color: #ffffff;
+  padding: 30px 20px;
+}
+.about .container .row .col-3 .text p {
+  font-size: 20px;
+  color: #b61984;
+}
+.about .container .row .col-3 .text h1 {
+  font-size: 22px;
+}
+.about .container .row .col-3 .text .purchase {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .container .row .col-3 .text .purchase button {
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: none;
+  color: #000;
+  padding: 6px 10px;
+}
+.about .container .row .col-3 .text .purchase button:hover {
+  border: 1px solid transparent;
+  color: black;
+  background: #5bc0be;
+}
+.about .container .row .col-3:hover {
+  box-shadow: 20px 20px 50px black;
+}
+
+.order-now {
+  z-index: 10;
+  position: absolute;
+  bottom: 38%;
+  left: 38%;
+}
+.order-now .invoice {
+  height: 250px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 5% 4%;
+  margin: 0 auto;
+  align-self: center;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: 0.25s;
+}
+.order-now .invoice .inv .order-details {
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.order-now .invoice .inv .order-details p {
+  font-size: 1.1rem;
+  border-bottom: 1px dashed white;
+  padding-bottom: 10px;
+  color: white;
+}
+.order-now .invoice .inv .order-details p span {
+  font-weight: 600;
+}
+.order-now .invoice .inv .order-details .btn-ok {
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  position: absolute;
+  width: 80%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: auto;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  background: #5bc0be;
+}
+
+.order-now {
+  z-index: 10;
+  position: absolute;
+  bottom: 38%;
+  left: 38%;
+}
+.order-now .invoice {
+  height: 250px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 5% 4%;
+  margin: 0 auto;
+  align-self: center;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: 0.25s;
+}
+.order-now .invoice .inv .order-details {
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.order-now .invoice .inv .order-details p {
+  font-size: 1.1rem;
+  border-bottom: 1px dashed white;
+  padding-bottom: 10px;
+  color: white;
+}
+.order-now .invoice .inv .order-details p span {
+  font-weight: 600;
+}
+.order-now .invoice .inv .order-details .btn-ok {
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  position: absolute;
+  width: 80%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: auto;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  background: #5bc0be;
+}
+
+.product {
+  z-index: 2;
+}
+.product .side-nav {
+  position: absolute;
+  background: #010101;
+  opacity: 0.95;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.product .side-nav .alt {
+  display: flex;
+  position: relative;
+}
+.product .side-nav .alt button {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.product .side-nav .alt button i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.product .side-nav .alt h1 {
+  color: white;
+  align-self: center;
+  transform: translateY(1rem);
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  left: 45%;
+  top: 5px;
+}
+.product .side-nav .cart-items {
+  position: absolute;
+  width: 90%;
+  margin: 0 5%;
+  height: 50%;
+  top: 10%;
+  flex-direction: column;
+}
+.product .side-nav .cart-items .cart-item {
+  position: relative;
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid whitesmoke;
+}
+.product .side-nav .cart-items .cart-item .cart-img {
+  width: 5rem;
+  height: 5rem;
+  justify-content: center;
+}
+.product .side-nav .cart-items .cart-item .cart-img img {
+  width: 100%;
+  align-self: center;
+}
+.product .side-nav .cart-items .cart-item .qty-change {
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.product .side-nav .cart-items .cart-item .qty-change .qty {
+  display: flex;
+}
+.product .side-nav .cart-items .cart-item .qty-change .qty .btn-qty {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 15px;
+}
+.product .side-nav .cart-items .cart-item .qty-change .qty .btn-qty i {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+.product .side-nav .cart-items .cart-item .qty-change .qty .btn-qty .qti {
+  color: white;
+}
+.product .side-nav .cart-items .cart-item .qty-change .qty p {
+  color: white;
+  position: absolute;
+  margin-left: 17px;
+}
+.product .side-nav .cart-items .cart-item .qty-change .qty .btn-qty:hover {
+  background: white;
+  color: black;
+}
+.product .side-nav .cart-items .cart-item .price {
+  color: white;
+  padding-top: 15px;
+}
+.product .side-nav .cart-items .cart-item .qti {
+  padding: 2px 5px;
+}
+.product .side-nav .cart-items .cart-item button {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.product .side-nav .cart-items .cart-item button i {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+.product .side-nav .cart-items strong {
+  color: white;
+}
+.product .side-nav .final {
+  position: absolute;
+  align-self: flex-end;
+  flex-direction: column;
+  bottom: 10%;
+  display: flex;
+  right: 0;
+}
+.product .side-nav .final strong {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-bottom: 1rem;
+  padding-right: 80px;
+  color: white;
+}
+.product .side-nav .final .action {
+  justify-content: space-evenly;
+}
+.product .side-nav .final .action .btn-buy {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.product .side-nav .final .action .btn-buy i {
+  color: #6665dd;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+.product .side-nav .final .action .btn-buy:hover {
+  background: #5bc0be;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  overflow: hidden;
+  z-index: 0;
+}
+.banner select {
+  position: absolute;
+  top: 50px;
+  left: 45%;
+  z-index: 2;
+}
+.banner .buttons {
+  position: absolute;
+  top: 10px;
+  left: 42%;
+}
+.banner .buttons button {
+  color: #fff;
+  background-color: #5bc0be;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin-right: 44px;
+  padding: 10px 10px;
+  cursor: pointer;
+  z-index: 99;
+}
+.banner .buttons .button:focus {
+  background-color: #c3ec0a;
+}
+
+.nava {
+  position: absolute;
+  right: 20%;
+  top: 25px;
+  z-index: 2;
+}
+.nava a i {
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.2rem;
+  color: black;
+  font-weight: 900;
+  cursor: pointer !important;
+}
+.nava a i:hover {
+  color: white;
+}
+.nava span {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: 600;
+  top: 1rem;
+  right: 1.5rem;
+}/*# sourceMappingURL=main.css.map */

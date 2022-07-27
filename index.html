@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div  class="banner">
+      <select aria-placeholder="chọn sản phẩm" name="" id="Find" onchange="findMay()">
+        <option value="abc">Chọn sản phẩm</option> 
+        <option value="Iphone" >Iphone</option>
+        <option value="Samsung">Samsung</option>
+      </select>
+
+      <div class="nava">
+        <a onclick="cart()">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <span id="total-qtys" class="total-qty">0</span>
+      </div>
+
+      <!-- card  -->
+      <div class="about">
+        <div class="container">
+          <div class="row" id="dsProduct">
+            <div class="col-3">
+              <div class="styleImg">
+                <img src="" alt="" />
+              </div>
+              <div class="text">
+                <p></p>
+                <h1></h1>
+                <div id="addCart" class="purchase">
+                  <p></p>
+                  <button >Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- product -->
+      <div class="product" style="display: none;"  id="access">
+        <div  class="side-nav">
+          <div class="alt">
+            <button onclick="closecard()">
+              <i class="fas fa-times"></i>
+            </button>
+            <h1>Cart</h1>
+          </div>
+            <div id="cart-itemzzz" class="cart-items">
+              <!-- <div class="cart-item">
+                <div class="cart-img">
+                  <img src="" alt="" />
+                </div>
+                <strong class="name"></strong>
+                <span class="qty-change">
+                  <div class="qty">
+                    <button  class="btn-qty">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <p class="qti">1</p>
+                    <button class="btn-qty">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </span>
+                <p class="price">$</p>
+                <button>
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div> -->
+            </div>
+          <div class="final">
+            <strong
+             id="totalMoney" >Total: 
+            </strong>
+            <div class="action">
+              <button class="btn-buy" onclick="closebuy(), openid()">
+                Purchase
+                <i class="fas fa-credit-card"></i>
+              </button>
+              <button onclick="clearCart()" class="btn-buy">
+                Clear Cart
+                <i class="fas fa-trash" style="color: #bb342f"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> <br>
+
+      <!-- carousel -->
+      <div class="order-now" style="display: none;" id="inclue">
+        <div class="invoice">
+          <div class="inv">
+            <div class="order-details">
+              <p>
+                you can pay
+                <span id="totalMoneys">$</span>
+                by card or any online transaction method after the products have
+                been dilivered to you
+              </p>
+              <button class="btn-ok" onclick="closeid() 
+              clearCart()">Thanks for buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="./js/API.js"></script>
+  <script src="./js/Product.js"></script>
+  <script src="./js/A1.js"></script>
+</html>
